@@ -13,11 +13,11 @@ const Container = styled.div`
 `;
 
 const Image = styled.div`
-  height: 250px;
-  width: 250px;
+  height: ${props => (props.height ? props.height : "250px")};
+  width: ${props => (props.width ? props.width : "250px")};
   background-size: cover;
   background-position: center;
-  background-image: ${props => `url("${process.env.PUBLIC_URL}/image/${props.image}")`};
+  background-image: ${props => `url("${process.env.PUBLIC_URL}/${props.image}.jpg")`};
 `;
 
 export { StyledHome, Image, Container };
