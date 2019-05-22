@@ -4,7 +4,7 @@ import { StyledModal, BackDrop } from "./modal.styled";
 
 function Modal(props) {
   function close() {
-    props.history.goBack();
+    props.history.replace("/");
   }
   return (
     <>
