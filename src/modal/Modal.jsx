@@ -3,16 +3,19 @@ import { Image } from "../home/home.styled";
 import { StyledModal, BackDrop } from "./modal.styled";
 
 function Modal(props) {
+  console.log(props)
   function close() {
-    props.history.replace("/");
+    props.history.goBack();
   }
   return (
     <>
-      <BackDrop onClick={close} />
+      {
+        props.history.action !== "POP" && props.location.pathname.startsWith('/image') &&  <BackDrop onClick={close} />
+      }
       <StyledModal>
         <Image image={`${props.match.params.id}`} width="100%" height="100%" />
       </StyledModal>
-    </>
+    </>  
   );
 }
 
