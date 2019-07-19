@@ -1,4 +1,5 @@
 # React-Modal-App
+When we open a modal by click a image url changes and when that url is copy into new tab modal contain will be shown instead of modal.
 
 - Build using --
   - Reactjs
