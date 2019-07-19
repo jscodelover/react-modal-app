@@ -3,7 +3,6 @@ import { Image } from "../home/home.styled";
 import { StyledModal, BackDrop } from "./modal.styled";
 
 function Modal(props) {
-  console.log(props)
   function close() {
     props.history.goBack();
   }

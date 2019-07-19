@@ -18,3 +18,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header, .footer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  width: 100%;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.footer{
+  bottom: 0;
+  top: unset;
+}

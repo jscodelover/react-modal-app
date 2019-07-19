@@ -5,10 +5,14 @@ import Modal from './modal/Modal';
 
 function App() {
 	return (
-		<Switch>
-			<Route path='/:id' component={Modal} />
-			<Route path='/' component={Home} />
-		</Switch>
+		<div>
+			<div className='header'>Header</div>
+			<Switch>
+				<Route path='/:id' component={Modal} />
+				<Route path='/' component={Home} />
+			</Switch>
+			<div className='footer'>Footer</div>
+		</div>
 	);
 }
 
